@@ -8,15 +8,19 @@ This context covers how one household prepares shopping lists and uses them whil
 The group of people who share Shopping Lists and Store Routes.
 
 **Shopping List**:
-A named household collection of intended purchases. It is independent of any Store.
+A named, reusable household collection of List Entries. Each Shopping List has independent membership and shopping progress, is independent of any Store, and has no completion state.
 _Avoid_: Checkbox list
+
+**Selected Shopping List**:
+The Shopping List one device is currently showing or using. Selection is local to that device and is not shared Household state.
+_Avoid_: Active list, current list
 
 **Product**:
 A household-specific identity for something the household can purchase repeatedly.
 _Avoid_: Catalog item, shopping item
 
 **List Entry**:
-The occurrence of a Product on a Shopping List, including details and shopping progress specific to that occurrence.
+The occurrence of a Product on a Shopping List, including details and checked state specific to that occurrence. It can remain on the Shopping List after it is checked and be unchecked when needed again.
 _Avoid_: Row, item
 
 **Store**:
